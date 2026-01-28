@@ -67,6 +67,16 @@ public class JavaLessonNine {
         }
         System.out.println("\n");
 
+        for (String[] rows: multiArray)
+        {
+            for (String column : rows)
+            {
+                System.out.print("| " + column + " ");
+            }
+            System.out.println("|");
+        }
+
+
     }
 
 }
