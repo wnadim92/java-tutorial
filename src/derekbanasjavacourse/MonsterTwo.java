@@ -1,7 +1,6 @@
 package derekbanasjavacourse;
 
 import java.util.Arrays;
-import org.apache.commons.lang3.*;
 
 public class MonsterTwo {
 
@@ -107,8 +106,8 @@ public class MonsterTwo {
 			randNumY = (int) (Math.random() * maxYBoardSpace);
 		} while (battleBoard[randNumX][randNumY] != '*');
 		
-		this.xPosition = randNumX;
-		this.yPosition = randNumY;
+		this.yPosition = randNumX;
+		this.xPosition = randNumY;
 		
 		this.nameChar1 = this.name.charAt(0);
 		
