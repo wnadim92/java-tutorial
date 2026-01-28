@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>derekbanasjavacourse</groupId>
+    <artifactId>derekbanasjavatutorial</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.20.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
