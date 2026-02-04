@@ -11,13 +11,40 @@ public class JavaLessonTwelve {
 
         LinkedList<String> names = new LinkedList<String>();
 
-        names.add("Mercury");
-        names.add("Venus");
+        names.add("Spinach");
+        names.add("Cheese");
+
+        names.addLast("Onions");
+        names.addFirst("Garlic");
+
+        names.add(0,"Tomatos");
+
+        names.remove(4);
+        names.remove("Spinach");
 
         for (String name : names)
         {
             System.out.println(name);
         }
+
+        System.out.println("\nFirst Index: " + names.get(0));
+        System.out.println("Last Index: " + names.getLast());
+
+        LinkedList<String> nameCopy = new LinkedList<String>(names);
+
+        System.out.println("\nnameCopy: " + nameCopy);
+
+        if (names.contains("Garlic"))
+        {
+            System.out.println("Has Garlic");
+        }
+
+        if(names.containsAll(nameCopy))
+        {
+            System.out.println("\nHas all from nameCopy");
+        }
+
+        System.out.println("\nTomatos at index: " + names.indexOf("Tomatos"));
 
     }
 }
