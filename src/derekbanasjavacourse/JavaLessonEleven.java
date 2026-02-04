@@ -77,6 +77,17 @@ public class JavaLessonEleven {
             System.out.println("Everything in nameCopy is in names");
         }
 
+        names.clear();
+
+        if (names.isEmpty())
+        {
+            System.out.println("Array list is empty.");
+        }
+
+        Object[] moreNames = new Object[1];
+        moreNames = nameCopy.toArray();
+        System.out.println(Arrays.toString(moreNames));
+
     }
 
 }
