@@ -39,6 +39,10 @@ public class Javalesson13 {
 
         System.out.println(randString.trim());
 
+        StringBuilder randSB = new StringBuilder("A random value");
+
+        System.out.println(randSB.append(" again"));
+
     }
 
 }
