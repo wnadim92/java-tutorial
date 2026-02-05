@@ -46,5 +46,15 @@ public class JavaLessonTwelve {
 
         System.out.println("\nTomatos at index: " + names.indexOf("Tomatos"));
 
+        System.out.println("\nList empty: " + names.get(0));
+
+        Object[] nameArray = new Object[4];
+
+        nameArray = names.toArray();
+
+        System.out.println(Arrays.toString(nameArray));
+
+        names.clear();
+
     }
 }
