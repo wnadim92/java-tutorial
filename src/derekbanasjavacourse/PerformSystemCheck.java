@@ -11,7 +11,7 @@ public class PerformSystemCheck implements Runnable {
         this.checkWhat = checkWhat;
     }
 
-    synchronized public void run() {
+    public void run() {
         lock.lock();
 
         System.out.println("Checking " + this.checkWhat);
