@@ -19,8 +19,8 @@ public class GetTime20 extends Thread {
             rightNow = new Date();
             currentLocale = new Locale("en");
 
-            timeFormatter = DateFormat.getTimeInstance(DateFormat.DEFAULT, currentLocale ); // DEFAULT, SHORT, MEDIUM, LONG, FULL
-            dateFormatter = DateFormat.getDateInstance(DateFormat.DEFAULT, currentLocale );
+            timeFormatter = DateFormat.getTimeInstance(DateFormat.FULL, currentLocale ); // DEFAULT, SHORT, MEDIUM, LONG, FULL
+            dateFormatter = DateFormat.getDateInstance(DateFormat.FULL, currentLocale );
 
             timeOutput = timeFormatter.format(rightNow);
             dateOutput = dateFormatter.format(rightNow);
