@@ -3,6 +3,8 @@ package derekbanasjavacourse;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit.*;
 
+import static java.util.concurrent.TimeUnit.SECONDS;
+
 
 public class LessonEighteen {
 
@@ -25,6 +27,9 @@ public class LessonEighteen {
         Thread[] listOfThreads = new Thread[Thread.activeCount()];
 
         Thread.enumerate(listOfThreads);
+        for (Thread i : listOfThreads) {
+            System.out.println(i.getName());
+        }
 
     }
 
